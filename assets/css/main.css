@@ -3222,3 +3222,9 @@ input, select, textarea {
 			}
 
 	}
+/* Ensure the embedded PDF scales with the viewport */
+.responsive-pdf {
+  width: 100%;        /* Set the width to 100% of the container */
+  height: 100vh;      /* Set the height to 100% of the viewport height */
+  border: none;       /* Optional: Remove the border around the embed */
+}
