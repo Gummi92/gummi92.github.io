@@ -3222,26 +3222,19 @@ input, select, textarea {
 			}
 
 	}
-<<<<<<< HEAD
+
 /* General styles for the embedded PDF */
-.responsive-pdf {
-  width: 100%;
-  max-width: 100%;  /* Ensures the PDF does not overflow the width of the screen */
-  height: 100vh;    /* Takes full height of the viewport on larger screens */
-  border: none;     /* Optional: Remove border around the embed */
+.pdf-container {
+    width: 100%;  /* Makes the container fill the available width */
+    max-width: 100%;  /* Ensures it doesn’t exceed the full width */
+    height: 100vh;  /* Adjust the height to 80% of the viewport height */
+    overflow: hidden;  /* Prevents scrollbars from appearing */
 }
 
-/* Media Query for smaller screens (mobile devices) */
-@media (max-width: 768px) {
-  .responsive-pdf {
-    width: 100%;    /* Ensures it takes the full width of the screen on mobile */
-    height: 60vh;   /* Adjust height for smaller screens (e.g., 60% of viewport height) */
-  }
-=======
-/* Ensure the embedded PDF scales with the viewport */
 .responsive-pdf {
-  width: 100%;        /* Set the width to 100% of the container */
-  height: 100vh;      /* Set the height to 100% of the viewport height */
-  border: none;       /* Optional: Remove the border around the embed */
->>>>>>> e03989267675baee28e245c7f08a366b686927f9
+    width: 100%;  /* Makes the embed fill the container's width */
+    height: 100%;  /* Makes the embed fill the container's height */
+}
+
+
 }
